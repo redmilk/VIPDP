@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242DE76CB708D9D14A46BEB0 /* Pods_DneprVip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57D5A09DF305EBFE68E45886 /* Pods_DneprVip.framework */; };
+		AC1DF4E01E2E4BA6004D92F5 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1DF4DF1E2E4BA6004D92F5 /* ComposeViewController.swift */; };
 		AC43BBE11E2E278700A90F89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43BBE01E2E278700A90F89 /* AppDelegate.swift */; };
-		AC43BBE31E2E278700A90F89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43BBE21E2E278700A90F89 /* ViewController.swift */; };
+		AC43BBE31E2E278700A90F89 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC43BBE21E2E278700A90F89 /* TableViewController.swift */; };
 		AC43BBE61E2E278700A90F89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC43BBE41E2E278700A90F89 /* Main.storyboard */; };
 		AC43BBE91E2E278700A90F89 /* DneprVip.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC43BBE71E2E278700A90F89 /* DneprVip.xcdatamodeld */; };
 		AC43BBEB1E2E278700A90F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC43BBEA1E2E278700A90F89 /* Assets.xcassets */; };
@@ -17,15 +19,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52585E5777943318A1E725AF /* Pods-DneprVip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DneprVip.release.xcconfig"; path = "Pods/Target Support Files/Pods-DneprVip/Pods-DneprVip.release.xcconfig"; sourceTree = "<group>"; };
+		57D5A09DF305EBFE68E45886 /* Pods_DneprVip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DneprVip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1DF4DF1E2E4BA6004D92F5 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		AC43BBDD1E2E278700A90F89 /* DneprVip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DneprVip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC43BBE01E2E278700A90F89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC43BBE21E2E278700A90F89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC43BBE21E2E278700A90F89 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		AC43BBE51E2E278700A90F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC43BBE81E2E278700A90F89 /* DneprVip.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DneprVip.xcdatamodel; sourceTree = "<group>"; };
 		AC43BBEA1E2E278700A90F89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC43BBED1E2E278700A90F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC43BBEF1E2E278700A90F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC43BBF51E2E290400A90F89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FBA31A77630FF2265C544A63 /* Pods-DneprVip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DneprVip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DneprVip/Pods-DneprVip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242DE76CB708D9D14A46BEB0 /* Pods_DneprVip.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0F250980E36A57D1235BB84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBA31A77630FF2265C544A63 /* Pods-DneprVip.debug.xcconfig */,
+				52585E5777943318A1E725AF /* Pods-DneprVip.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AC1DF4DE1E2E3CB7004D92F5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC1DF4DF1E2E4BA6004D92F5 /* ComposeViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		AC43BBD41E2E278700A90F89 = {
 			isa = PBXGroup;
 			children = (
 				AC43BBDF1E2E278700A90F89 /* DneprVip */,
 				AC43BBDE1E2E278700A90F89 /* Products */,
+				A0F250980E36A57D1235BB84 /* Pods */,
+				DB5698714E224DC387F2C409 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +84,10 @@
 		AC43BBDF1E2E278700A90F89 /* DneprVip */ = {
 			isa = PBXGroup;
 			children = (
+				AC1DF4DE1E2E3CB7004D92F5 /* Controllers */,
 				AC43BBF51E2E290400A90F89 /* GoogleService-Info.plist */,
 				AC43BBE01E2E278700A90F89 /* AppDelegate.swift */,
-				AC43BBE21E2E278700A90F89 /* ViewController.swift */,
+				AC43BBE21E2E278700A90F89 /* TableViewController.swift */,
 				AC43BBE41E2E278700A90F89 /* Main.storyboard */,
 				AC43BBEA1E2E278700A90F89 /* Assets.xcassets */,
 				AC43BBEC1E2E278700A90F89 /* LaunchScreen.storyboard */,
@@ -70,6 +97,14 @@
 			path = DneprVip;
 			sourceTree = "<group>";
 		};
+		DB5698714E224DC387F2C409 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57D5A09DF305EBFE68E45886 /* Pods_DneprVip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +112,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC43BBF21E2E278700A90F89 /* Build configuration list for PBXNativeTarget "DneprVip" */;
 			buildPhases = (
+				D5628BC0A2B48EC3167C5024 /* [CP] Check Pods Manifest.lock */,
 				AC43BBD91E2E278700A90F89 /* Sources */,
 				AC43BBDA1E2E278700A90F89 /* Frameworks */,
 				AC43BBDB1E2E278700A90F89 /* Resources */,
+				2D0DB4518E405A1761222572 /* [CP] Embed Pods Frameworks */,
+				2B806ADBFFA8C1C07DCD4250 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,14 +177,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B806ADBFFA8C1C07DCD4250 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DneprVip/Pods-DneprVip-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D0DB4518E405A1761222572 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DneprVip/Pods-DneprVip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5628BC0A2B48EC3167C5024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC43BBD91E2E278700A90F89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AC43BBE91E2E278700A90F89 /* DneprVip.xcdatamodeld in Sources */,
-				AC43BBE31E2E278700A90F89 /* ViewController.swift in Sources */,
+				AC43BBE31E2E278700A90F89 /* TableViewController.swift in Sources */,
 				AC43BBE11E2E278700A90F89 /* AppDelegate.swift in Sources */,
+				AC1DF4E01E2E4BA6004D92F5 /* ComposeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +354,7 @@
 		};
 		AC43BBF31E2E278700A90F89 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA31A77630FF2265C544A63 /* Pods-DneprVip.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNLBEN9CLK;
@@ -280,6 +368,7 @@
 		};
 		AC43BBF41E2E278700A90F89 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52585E5777943318A1E725AF /* Pods-DneprVip.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNLBEN9CLK;
@@ -310,6 +399,7 @@
 				AC43BBF41E2E278700A90F89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
