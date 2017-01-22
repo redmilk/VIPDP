@@ -16,6 +16,7 @@
 		AC43BBEB1E2E278700A90F89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC43BBEA1E2E278700A90F89 /* Assets.xcassets */; };
 		AC43BBEE1E2E278700A90F89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC43BBEC1E2E278700A90F89 /* LaunchScreen.storyboard */; };
 		AC43BBF61E2E290400A90F89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC43BBF51E2E290400A90F89 /* GoogleService-Info.plist */; };
+		AC8E36011E34DC8B0042B316 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8E36001E34DC8B0042B316 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AC43BBED1E2E278700A90F89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC43BBEF1E2E278700A90F89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC43BBF51E2E290400A90F89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC8E36001E34DC8B0042B316 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		FBA31A77630FF2265C544A63 /* Pods-DneprVip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DneprVip.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DneprVip/Pods-DneprVip.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 		AC1DF4DE1E2E3CB7004D92F5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AC8E36001E34DC8B0042B316 /* WebViewController.swift */,
 				AC1DF4DF1E2E4BA6004D92F5 /* ComposeViewController.swift */,
 			);
 			name = Controllers;
@@ -233,6 +236,7 @@
 				AC43BBE91E2E278700A90F89 /* DneprVip.xcdatamodeld in Sources */,
 				AC43BBE31E2E278700A90F89 /* TableViewController.swift in Sources */,
 				AC43BBE11E2E278700A90F89 /* AppDelegate.swift in Sources */,
+				AC8E36011E34DC8B0042B316 /* WebViewController.swift in Sources */,
 				AC1DF4E01E2E4BA6004D92F5 /* ComposeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +363,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNLBEN9CLK;
 				INFOPLIST_FILE = DneprVip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pq.DneprVip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -373,6 +378,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZNLBEN9CLK;
 				INFOPLIST_FILE = DneprVip/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pq.DneprVip;
 				PRODUCT_NAME = "$(TARGET_NAME)";

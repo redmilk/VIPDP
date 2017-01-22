@@ -10,8 +10,16 @@ import UIKit
 import FirebaseDatabase
 import PCLBlurEffectAlert
 
-class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+/*
+ 
+ ref?.child("Posts").childByAutoId().setValue(self.textView.text!)
+ 
+ 
+ */
 
+
+class TableViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     var data = [String]()
     var keys = [String]()
     
@@ -19,11 +27,18 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     var dataBaseHandle: FIRDatabaseHandle?
     
     @IBOutlet var tableView: UITableView!
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    var tapGesture: UITapGestureRecognizer!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-
+        
+        tapGesture = UITapGestureRecognizer(target: self, action: #selector(TableViewController.hideKeyboard))
+        tapGesture.cancelsTouchesInView = true
+        tableView.addGestureRecognizer(tapGesture)
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -42,10 +57,9 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
             }
         })
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func hideKeyboard() {
+        tableView.endEditing(true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -61,19 +75,22 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        //dismiss keyboard input
+        self.view.endEditing(true)
     }
     
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
-        //knopka share
-        let share = UITableViewRowAction(style: .default, title: "Share", handler: { (action, indexPath)-> Void in
-            let activityController = UIActivityViewController(activityItems: ["Text here"], applicationActivities: nil)
-            self.present(activityController, animated: true, completion: nil)
+        //knopka DELETE ALL (ex share)
+        let share = UITableViewRowAction(style: .default, title: "Delete All", handler: { (action, indexPath)-> Void in
             
+            self.deleteAllPostsFromDatabaseAndTableView()
+            
+            ///activity controller
+            //self.activityControllerInit()
         })
         
-        //knopka udalit' restoran
+        //knopka udalit' post
         let delete = UITableViewRowAction(style: .default, title: "Delete", handler: { (action, indexPath) -> Void in
             
             ///delete from database
@@ -91,6 +108,27 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         return [share, delete]
     }
+    
+    @IBAction func sendButtonPressed(_ sender: UIButton) {
+        if textView.text != "" {
+            ref?.child("Posts").childByAutoId().setValue(self.textView.text!)
+            textView.text = ""
+        }
+    }
+    
+    func deleteAllPostsFromDatabaseAndTableView() {
+        //delete all posts
+        self.ref?.child("Posts").setValue(nil)
+        self.data.removeAll()
+        self.keys.removeAll()
+        self.tableView.reloadData()
+    }
+    
+    //for share button //unused
+    func activityControllerInit() {
+        let activityController = UIActivityViewController(activityItems: ["Text here"], applicationActivities: nil)
+         self.present(activityController, animated: true, completion: nil)
 
+    }
 }
 

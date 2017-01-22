@@ -26,7 +26,6 @@ class ComposeViewController: UIViewController {
     @IBAction func postButtonHandler(_ sender: UIBarButtonItem) {
         
         
-        ref?.child("Posts").childByAutoId().setValue(self.textView.text!)
         
         presentingViewController?.dismiss(animated: true, completion: nil)
 
